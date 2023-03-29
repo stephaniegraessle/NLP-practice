@@ -1,3 +1,5 @@
 # ignore ALL .gfo files
 *.gfo
+
+# ignore ALL .tmp files
 *.tmp
