@@ -1,3 +1,4 @@
+-- Grammatical Framework tutorial
 -- concrete syntax FoodEng
 concrete FoodEng of Food = {
   lincat
