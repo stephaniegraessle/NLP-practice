@@ -1,5 +1,6 @@
-# ignore ALL .gfo files
+# ignore all generated files
+*.dot
 *.gfo
-
-# ignore ALL .tmp files
+*.png
+*.ps
 *.tmp
