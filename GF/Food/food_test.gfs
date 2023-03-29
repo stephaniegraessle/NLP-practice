@@ -1,5 +1,6 @@
 -- script to test out Food grammar
--- run with `$ gf --run <food_test.gfs` command
+-- run with `$ gf --run <food_test.gfs`
+-- run system command within gf through `> !`
 
 import FoodEng.gf
 --import FoodIta.gf
@@ -36,3 +37,6 @@ import FoodEng.gf
 
 -- visualize parse trees, which show categories and words instead of function symbols
 --parse "this delicious cheese is very Italian" | visualize_parse -view="eog"
+
+-- use '?' to call system command receiving argument from GF pipes
+--generate_trees -depth=4 | ? wc -l
