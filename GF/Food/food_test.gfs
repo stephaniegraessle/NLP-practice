@@ -1,4 +1,6 @@
+-- script to test out Food grammar
 import FoodEng.gf
+--import FoodIta.gf
 
 -- build random tree in accordance with abstract syntax
 --generate_random
@@ -9,11 +11,20 @@ import FoodEng.gf
 -- gen all possible phrases (default depth 3)
 --generate_trees -depth=2 | l
 
--- output result to file with `$ gf --run <food_test.gfs > depth4_gen.tmp`
-generate_trees -depth=4
+-- Exercise: count depth 4/5 results with 'wc' command
+-- first output result to file with `$ gf --run <food_test.gfs > depth4_gen.tmp`
+--generate_trees -depth=4
 
 -- see all options with 'help' command
 --help gr
 --help gt
 
+-- use -tr with commands whose output you want to see
+--gr -tr | l -tr | p
 
+-- use 'write_file'='wf' command to save output into file
+gr -number=10 | linearize | write_file -file=exx.tmp
+
+-- use 'read_file'='rf' command to read file to GF
+-- '-lines' flag tells GF to read each line of file separately
+read_file -file=exx.tmp -lines | parse
