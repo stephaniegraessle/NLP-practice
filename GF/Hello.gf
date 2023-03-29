@@ -1,11 +1,11 @@
 -- a "Hello World" grammar
-abstract Hello = { -- 'Hello' = module header
+abstract Hello = { -- abstract syntax, module header 'Hello'
 
-	flags startcat = Greeting;
+	flags startcat = Greeting; -- set default start category for parsing and generation
 
-	cat Greeting ; Recipient ;
+	cat Greeting ; Recipient ; -- category declarations
 
-	fun
-		Hello : Recipient -> Greeting ;
-		World, Mum, Friends : Recipient ;
+	fun -- function declaration
+		Hello : Recipient -> Greeting ; -- greet a 'Recipient'
+		World, Mum, Friends : Recipient ; -- 'Recipient' can be any of three
 }
