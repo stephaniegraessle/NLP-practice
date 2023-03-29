@@ -1,7 +1,19 @@
 import FoodEng.gf
 
+-- build random tree in accordance with abstract syntax
+--generate_random
+
 -- gen 10 random sentences
-generate_random -number=10 | linearize
+--generate_random -number=10 | linearize
 
 -- gen all possible phrases (default depth 3)
---generate_trees -depth=2 | linearize
+--generate_trees -depth=2 | l
+
+-- output result to file with `$ gf --run <food_test.gfs > depth4_gen.tmp`
+generate_trees -depth=4
+
+-- see all options with 'help' command
+--help gr
+--help gt
+
+
