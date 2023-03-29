@@ -1,3 +1,4 @@
+-- Grammatical Framework tutorial
 abstract Food = { -- abstract syntax for module header Food
 
 	flags startcat = Phrase ; -- start category is Phrase
