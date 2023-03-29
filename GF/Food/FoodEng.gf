@@ -8,7 +8,7 @@ concrete FoodEng of Food = {
     This kind = {s = "this" ++ kind.s} ;
     That kind = {s = "that" ++ kind.s} ;
     QKind quality kind = {s = quality.s ++ kind.s} ;
-    With kind1 kind2 = {s = kind1.s ++ "with" ++ kind2.s} ;
+    --With kind1 kind2 = {s = kind1.s ++ "with" ++ kind2.s} ; -- ambiguous string
     Wine = {s = "wine"} ;
     Cheese = {s = "cheese"} ;
     Fish = {s = "fish"} ;
