@@ -1,3 +1,4 @@
+-- Grammatical Framework tutorial
 -- a "Hello World" grammar
 abstract Hello = { -- abstract syntax, module header 'Hello'
 

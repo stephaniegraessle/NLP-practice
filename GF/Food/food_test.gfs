@@ -1,0 +1,3 @@
+-- generate 10 random sentences
+import FoodEng.gf
+generate_random -number=10 | linearize
