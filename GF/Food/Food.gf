@@ -16,6 +16,9 @@ abstract Food = { -- abstract syntax for module header Food
     QKind : Quality -> Kind -> Kind ;
     Wine, Cheese, Fish : Kind ; 
 
+    -- string is ambiguous if it parses to more than one tree (e.g., 'fish with cheese with wine' parses to both 'With (With Fish Cheese) Wine' and 'With Fish (With Cheese) Wine')
+    --With : Kind -> Kind -> Kind ;
+
     -- Quality either atomic (e.g., 'Italian') or built by modifying given Quality with the word 'very' (e.g., 'very warm')
     Very : Quality -> Quality ;
     Fresh, Warm, Italian, Expensive, Delicious, Boring : Quality;
