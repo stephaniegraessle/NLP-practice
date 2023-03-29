@@ -4,15 +4,21 @@ abstract Food = { -- abstract syntax for module header Food
   flags startcat = Phrase ; -- start category is Phrase
 
   cat -- category declarations
-    Phrase ; Item ; Kind ; Quality ; -- Phrase can be build by assigning a Quality to an Item (e.g., 'this cheese is Italian')
+    -- Phrase can be build by assigning a Quality to an Item (e.g., 'this cheese is Italian')
+    Phrase ; Item ; Kind ; Quality ;
 
   fun -- function declaration
-    Is : Item -> Quality -> Phrase ; -- Item built from a Kind by prefixing 'this' or 'that' (e.g., 'this wine')
+    -- Item built from a Kind by prefixing 'this' or 'that' (e.g., 'this wine')
+    Is : Item -> Quality -> Phrase ;
     This, That : Kind -> Item;
+
+    -- Kind either atomic (e.g., 'cheese' or formed quantifying given Kind with a Quality (e.g., 'Italian cheese')
     QKind : Quality -> Kind -> Kind ;
-    Wine, Cheese, Fish : Kind ; -- Kind either atomic (e.g., 'cheese' or formed quantifying given Kind with a Quality (e.g., 'Italian cheese')
+    Wine, Cheese, Fish : Kind ; 
+
+    -- Quality either atomic (e.g., 'Italian') or built by modifying given Quality with the word 'very' (e.g., 'very warm')
     Very : Quality -> Quality ;
-   Fresh, Warm, Italian, Expensive, Delicious, Boring : Quality; -- Quality either atomic (e.g., 'Italian') or built by modifying given Quality with the word 'very' (e.g., 'very warm')
+    Fresh, Warm, Italian, Expensive, Delicious, Boring : Quality;
 }
 
 -- Example Phrase:
