@@ -1,4 +1,6 @@
 -- script to test out Food grammar
+-- run with `$ gf --run <food_test.gfs` command
+
 import FoodEng.gf
 --import FoodIta.gf
 
@@ -23,8 +25,14 @@ import FoodEng.gf
 --gr -tr | l -tr | p
 
 -- use 'write_file'='wf' command to save output into file
-gr -number=10 | linearize | write_file -file=exx.tmp
+--gr -number=10 | linearize | write_file -file=exx.tmp
 
 -- use 'read_file'='rf' command to read file to GF
 -- '-lines' flag tells GF to read each line of file separately
-read_file -file=exx.tmp -lines | parse
+--read_file -file=exx.tmp -lines | parse
+
+-- tree visualization, generated in postscript (.ps), saved to .dot file
+--parse "this delicious cheese is very Italian" | visualize_tree -view="eog"
+
+-- visualize parse trees, which show categories and words instead of function symbols
+--parse "this delicious cheese is very Italian" | visualize_parse -view="eog"
