@@ -1,3 +1,7 @@
--- generate 10 random sentences
 import FoodEng.gf
+
+-- gen 10 random sentences
 generate_random -number=10 | linearize
+
+-- gen all possible phrases (default depth 3)
+--generate_trees -depth=2 | linearize
