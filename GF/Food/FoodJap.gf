@@ -8,7 +8,6 @@ concrete FoodJap of Food = {
     This kind = {s = "この" ++ kind.s} ;
     That kind = {s = "その" ++ kind.s} ;
     QKind quality kind = {s = quality.s ++ kind.s} ;
-    --With kind1 kind2 = {s = kind1.s ++ "with" ++ kind2.s} ; -- ambiguous string
     Wine = {s = "ワイン"} ;
     Cheese = {s = "チーズ"} ;
     Fish = {s = "魚"} ;
