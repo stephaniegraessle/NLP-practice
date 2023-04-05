@@ -13,6 +13,7 @@ concrete FoodEng of Food = {
     Wine = {s = "wine"} ;
     Cheese = {s = "cheese"} ;
     Fish = {s = "fish"} ;
+    Rice = {s = "rice"} ;
     Very quality = {s = "very" ++ quality.s} ;
     Fresh = {s = "fresh"} ;
     Warm = {s = "warm"} ;
@@ -20,4 +21,6 @@ concrete FoodEng of Food = {
     Expensive = {s = "expensive"} ;
     Delicious = {s = "delicious"} ;
     Boring = {s = "boring"} ;
+    Odd = {s = "odd"} ;
+    Shitty = {s = "shitty"} ;
 }

@@ -6,11 +6,12 @@ concrete FoodFin of Food = {
   lin
     Is item quality = {s = item.s ++ "on" ++ quality.s} ;
     This kind = {s = "tämä" ++ kind.s} ;
-    That kind = {s = "sitä" ++ kind.s} ;
+    That kind = {s = "se" ++ kind.s} ;
     QKind quality kind = {s = quality.s ++ kind.s} ;
     Wine = {s = "viini"} ;
     Cheese = {s = "juusto"} ;
     Fish = {s = "kala"} ;
+    Rice = {s = "riisi"} ;
     Very quality = {s = "todella" ++ quality.s} ;
     Fresh = {s = "tuore"} ;
     Warm = {s = "lämmin"} ;
@@ -18,4 +19,6 @@ concrete FoodFin of Food = {
     Expensive = {s = "kallis"} ;
     Delicious = {s = "herkullinen"} ;
     Boring = {s = "tylsä"} ;
+    Odd = {s = "vinha"} ;
+    Shitty = {s = "paskaa"} ;
 }
