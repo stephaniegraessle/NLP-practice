@@ -10,6 +10,9 @@
         Is item quality = {s = item.s ++ "è" ++ quality.s} ;
         This kind = {s = "questo" ++ kind.s} ;
         That kind = {s = "quel" ++ kind.s} ;
+        -- rule changed order from English:
+        -- QKind quality kind = {s = quality.s ++ kind.s} ;
+        -- (e.g., 'vino Italiano' instead of 'Italian wine')
         QKind quality kind = {s = kind.s ++ quality.s} ;
         Wine = {s = "vino"} ;
         Cheese = {s = "formaggio"} ;
