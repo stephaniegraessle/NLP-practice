@@ -3,7 +3,7 @@
 -- run system command within gf through `> !`
 
 import FoodEng.gf
---import FoodIta.gf
+import FoodIta.gf
 
 -- build random tree in accordance with abstract syntax
 --generate_random
@@ -40,3 +40,5 @@ import FoodEng.gf
 
 -- use '?' to call system command receiving argument from GF pipes
 --generate_trees -depth=4 | ? wc -l
+
+parse "this delicious cheese is very Italian" | align_words
